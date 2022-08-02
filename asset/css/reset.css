@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Motiva Sans";
+    src: url(../fonts/MotivaSans/MotivaSansThin.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Motiva Sans";
+    src: url(../fonts/MotivaSans/MotivaSansLight.woff.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Motiva Sans";
+    src: url(../fonts/MotivaSans/MotivaSansRegular.woff.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Motiva Sans";
+    src: url(../fonts/MotivaSans/MotivaSansMedium.woff.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Motiva Sans";
+    src: url(../fonts/MotivaSans/MotivaSansBold.woff.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Motiva Sans";
+    src: url(../fonts/MotivaSans/MotivaSansExtraBold.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Motiva Sans";
+    src: url(../fonts/MotivaSans/MotivaSansBlack.woff.ttf);
+    font-weight: 900;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Motiva Sans", sans-serif;
+}
+
+   

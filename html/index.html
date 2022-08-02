@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="..\asset\css\reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\asset\css\root.css">
+    <link rel="stylesheet" href="..\asset\css\style.css">
+    <link rel="stylesheet" href="..\asset\css\reponsive.css">
+</head>
+
+<body id="overflow">
+    <div id="overlay"></div>
+    <!--Sidebar-->
+    <div class="" id="sidebar">
+        <div class="sidebar_content d-flex flex-column">
+            <a href="login.html" class="sidebar_item">Đăng nhập</a>
+            <a href="index.html" class="sidebar_item">Cửa hàng</a>
+            <a href="#" class="sidebar_item">Cộng đồng</a>
+            <a href="#" class="sidebar_item">Hỗ trợ</a>
+            <div class="sidebar_option">Thay đổi ngôn ngữ</div>
+            <div class="sidebar_option">Xem web cho desktop</div>
+            <div class="sidebar_footer">
+                <img src="../asset/imgs/img/logo_valve_footer.png" alt="">
+                © Valve Corporation. Bảo lưu mọi quyền. Tất cả các thương hiệu là tài sản của chủ sở hữu tương ứng tại
+                Hoa Kỳ và các quốc gia khác.
+                &nbsp;
+                <a href="">Chính sách bảo mật</a>
+                &nbsp; | &nbsp;
+                <a href="">Pháp lý</a>
+                &nbsp; | &nbsp;
+                <a href="">Điều khoản người đăng ký Steam </a>
+                &nbsp; | &nbsp;
+                <a href="">Hoàn tiền</a>
+                &nbsp; | &nbsp;
+                <a href="">Về cookie</a>
+            </div>
+        </div>
+    </div>
+    <!--Global_Navigation-->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg global-navbar">
+            <div class="reponsive_menu_logo"><button onclick="sb_open()"><img
+                        src="../asset/imgs/img/header_menu_hamburger.png" alt=""></button></div>
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="../asset/imgs/svg/logo_steam.svg" alt=""></a>
+                <div class="collapse navbar-collapse justify-content-start" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="dropdown global-dropdown"><a class="nav-link" href="index.html">CỬA HÀNG</a>
+                                <div class="dropdown-content">
+                                    <a href="#">TRANG CHỦ</a>
+                                    <a href="#">HÀNG KHÁM PHÁ</a>
+                                    <a href="#">DANH SÁCH ƯỚC</a>
+                                    <a href="#">CỬA HÀNG ĐIỂM</a>
+                                    <a href="#">TIN TỨC</a>
+                                    <a href="#">THỐNG KÊ</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown global-dropdown"> <a class="nav-link dropdown" href="#">CỘNG ĐỒNG</a>
+                                <div class="dropdown-content">
+                                    <a href="#">TRANG CHỦ</a>
+                                    <a href="#">THẢO LUẬN</a>
+                                    <a href="#">WORKSHOP</a>
+                                    <a href="#">CHỢ</a>
+                                    <a href="#">PHÁT SÓNG</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">GIỚI THIỆU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">HỖ TRỢ</a></li>
+                    </ul>
+                </div>
+                <div class="collapse show global-action">
+                    <a class="installsteam_btn" href="index.html">Cài đặt Steam</a>
+                    <a class="global-action-link" href="login.html">Đăng nhập</a>
+                    &nbsp;|&nbsp;
+                    <div class="dropdown global-dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Ngôn ngữ
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">简体中文 (Hán giản thể)</a></li>
+                            <li><a class="dropdown-item" href="#">繁體中文 (Hán phồn thể)</a></li>
+                            <li><a class="dropdown-item" href="#">日本語 (Nhật)</a></li>
+                            <li><a class="dropdown-item" href="#">한국어 (Hàn Quốc)</a></li>
+                            <li><a class="dropdown-item" href="#">ไทย (Thái)</a></li>
+                            <li><a class="dropdown-item" href="#">Български (Bungari)</a></li>
+                            <li><a class="dropdown-item" href="#">Čeština (Séc)</a></li>
+                            <li><a class="dropdown-item" href="#">Dansk (Đan Mạch)</a></li>
+                            <li><a class="dropdown-item" href="#">Deutsch (Đức)</a></li>
+                            <li><a class="dropdown-item" href="#">English (Anh)</a></li>
+                            <li><a class="dropdown-item" href="#">Español - España (Tây Ban Nha - TBN)</a></li>
+                            <li><a class="dropdown-item" href="#">Español - Latinoamérica (Tây Ban Nha cho Mỹ Latin)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ελληνικά (Hy Lạp)</a></li>
+                            <li><a class="dropdown-item" href="#">Français (Pháp)</a></li>
+                            <li><a class="dropdown-item" href="#">Italiano (Ý)</a></li>
+                            <li><a class="dropdown-item" href="#">Magyar (Hungary)</a></li>
+                            <li><a class="dropdown-item" href="#">Nederlands (Hà Lan)</a></li>
+                            <li><a class="dropdown-item" href="#">Norsk (Na Uy)</a></li>
+                            <li><a class="dropdown-item" href="#">Polski (Ba Lan)</a></li>
+                            <li><a class="dropdown-item" href="#">Português (Bồ Đào Nha)</a></li>
+                            <li><a class="dropdown-item" href="#">Português - Brasil (Bồ Đào Nha - Brazil)</a></li>
+                            <li><a class="dropdown-item" href="#">Română (Rumani)</a></li>
+                            <li><a class="dropdown-item" href="#">Русский (Nga)</a></li>
+                            <li><a class="dropdown-item" href="#">Suomi (Phần Lan)</a></li>
+                            <li><a class="dropdown-item" href="#">Svenska (Thụy Điển)</a></li>
+                            <li><a class="dropdown-item" href="#">Türkçe (Thổ Nhĩ Kỳ)</a></li>
+                            <li><a class="dropdown-item" href="#">Українська (Ukrainia)</a></li>
+                            <li><a class="dropdown-item" href="#">Báo cáo lỗi dịch thuật</a></li>
+                        </ul>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Body-->
+    <div class="container-fluid p-0 home_page_body_ctn">
+        <!--Store_Navigation-->
+        <div class="container-fluid p-0 pt-4 navbar-store">
+            <div class="content m-auto">
+                <div class="nav h-100">
+                    <div class="dropdown h-100 store_dropdown"><a class="nav-link" href="index.html">Cửa hàng của
+                            bạn</a>
+                        <div class="dropdown-content">
+                            <a href="#">Trang chủ</a>
+                            <a href="#">Khuyến nghị từ cộng đồng</a>
+                            <a href="#">Đã xem gần đây</a>
+                            <a href="#">Thẩm định viên Steam</a>
+                        </div>
+                    </div>
+                    <div class="dropdown h-100 store_dropdown"> <a class="nav-link" href="#">Mới & đáng
+                            chú
+                            ý</a>
+                        <div class="dropdown-content">
+                            <a href="#">Bán chạy nhất</a>
+                            <a href="#">Mới & đang nổi</a>
+                            <a href="#">Khuyến mãi hiện tại</a>
+                            <a href="#">Mới cập nhật</a>
+                            <a href="#">Phổ biến và Sắp ra mắt</a>
+                        </div>
+                    </div>
+                    <div class="dropdown h-100 store_dropdown"><a class="nav-link" href="#">Danh mục</a></div>
+                    <div class="dropdown h-100 store_dropdown"><a class="nav-link" href="#">Cửa hàng điểm</a></div>
+                    <div class="dropdown h-100 store_dropdown"><a class="nav-link" href="#">Tin tức</a></div>
+                    <div class="dropdown h-100 store_dropdown"><a class="nav-link" href="#">Labs</a></div>
+                    <div class="store_flex_spacing d-lg-block"></div>
+                    <div class="searchbox">
+                        <input id="store_nav_search_term" name="term" type="text" class="default" placeholder="tìm kiếm"
+                            size="22" autocomplete="off" maxlength="64">
+                        <a href="#" id="store_search_link">
+                            <img src="../asset/imgs/img/search_icon_btn.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Must see-->
+        <div class="container-fluid p-0 must_see">
+            <div class="content m-auto mt-4">
+                <h2>TIÊU BIỂU & NÊN XEM</h2>
+            </div>
+            <a href="csgo.html">
+            <div class="content m-auto game_info">
+                <div class="scrshot"><img src="../asset/imgs/app/csgo/capsule_616x353.jpg" alt=""></div>
+                <div class="info">
+                    <div class="title">
+                        <span class="mr-3">CS:GO Prime Status Upgrade</span>
+                    </div>
+                    <div class="screenshot d-flex flex-wrap">
+                        <div><img src="../asset/imgs/app/csgo/ss_118cb022b9a43f70d2e5a2df7427f29088b6b191.600x338.jpg"
+                                alt=""></div>
+                        <div><img src="../asset/imgs/app/csgo/ss_2b9e362287b509bb3864fa7bad654fe1fda0f7ed.600x338.jpg"
+                                alt=""></div>
+                        <div><img src="../asset/imgs/app/csgo/ss_8c9cce9a9dde7b9c020837dcbd4615efe6f77d66.600x338.jpg"
+                                alt=""></div>
+                        <div><img src="../asset/imgs/app/csgo/ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.600x338.jpg"
+                                alt=""></div>
+                    </div>
+                    <div class="reason">
+                        <div class="main">
+                            <div>Đã ra mắt</div>
+                        </div>
+                        <div class="additional">
+                            <div>Bán chạy</div>
+                        </div>
+                    </div>
+                    <div class="discount_block">
+                        <div class="bundle_base_discount"></div>
+                        <div class="discount_pct"></div>
+                        <div class="discount_original_price"></div>
+                        <div class="discount_final_price">340.000₫</div>
+                    </div>
+                    <div class="platforms"><span class="platform_img win"></span><span
+                            class="platform_img mac"></span><span class="platform_img linux"></span></div>
+                </div>
+            </div>
+        </a>
+        </div>
+        <!--Special offer-->
+        <div class="container-fluid p-0">
+            <div class="content m-auto mt-4">
+                <h2>ƯU ĐÃI ĐẶC BIỆT</h2>
+            </div>
+            <div class="content m-auto d-flex special_offer">
+                <div class="spotlight">
+                    <img src="../asset/imgs/app/spotlight/spotlight_image_for_honor.jpg" alt="">
+                    <div class="spotlight_content">
+                        <h2>Cuối tuần miễn phí</h2>
+                        <div class="spotlight_body">Ưu đãi kết thúc vào 4 Thg08 @ 12:00am.</div>
+                        <div class="spotlight_body mt-1 price">
+                            <div class="discount_block discount_block_spotlight" data-price-final="6200000">
+                                <div class="discount_pct m-0">-75%</div>
+                                <div class="discount_prices m-0">
+                                    <div class="discount_original_price">249.000₫</div>
+                                    <div class="discount_final_price">62.000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spotlight">
+                    <img src="../asset/imgs/app/spotlight/spotlight_image_hades.jpg" alt="">
+                    <div class="spotlight_content">
+                        <h2>ƯU ĐÃI CUỐI TUẦN</h2>
+                        <div class="spotlight_body">Ưu đãi kết thúc vào 4 Thg08 @ 12:00am.</div>
+                        <div class="spotlight_body mt-1 price">
+                            <div class="discount_block discount_block_spotlight" data-price-final="6200000">
+                                <div class="discount_pct m-0">-40%</div>
+                                <div class="discount_prices m-0">
+                                    <div class="discount_original_price">220.000₫</div>
+                                    <div class="discount_final_price">132.000₫</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="d-flex flex-column">
+                    <div class="spotlight special_target mb-2">
+                        <img src="../asset/imgs/app/spotlight/spotlight_image_dying_light.jpg" alt="">
+                        <div class="spotlight_content">
+                            <div class="spotlight_body mt-1 price">
+                                <div class="discount_block discount_block_spotlight" data-price-final="6200000">
+                                    <div class="discount_pct m-0">-75%</div>
+                                    <div class="discount_prices m-0">
+                                        <div class="discount_original_price">549.000₫</div>
+                                        <div class="discount_final_price">137.000₫</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spotlight special_target mt-1">
+                        <img src="../asset/imgs/app/spotlight/spotlight_image_no_man_sky.jpg" alt="">
+                        <div class="spotlight_content">
+                            <div class="spotlight_body mt-1 price">
+                                <div class="discount_block discount_block_spotlight" data-price-final="6200000">
+                                    <div class="discount_pct m-0">-50%</div>
+                                    <div class="discount_prices m-0">
+                                        <div class="discount_original_price">550.000₫</div>
+                                        <div class="discount_final_price">275.000₫</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!--Home_login-->
+        <div class="container-fluid pt-5 pb-5 home_login">
+            <div class="content text-center m-auto p-3">
+                <p>Đăng nhập để xem những gợi ý dành riêng cho bạn</p>
+                <a href="login.html" class="btn btn_green"><span>Đăng nhập</span></a>
+                <br>
+                <br>
+                <p class="mb-0">Hoặc <a href="register.html">đăng ký</a> và tham gia Steam miễn phí</p>
+            </div>
+        </div>
+        <!--Spacing-->
+        <div class="home_space"></div>
+        <!--browse_steam-->
+        <div class="container-fluid p-0">
+            <div class="content m-auto mt-4">
+                <h2>DUYỆT STEAM</h2>
+            </div>
+            <div class="content m-auto browse_steam">
+                <a class="btn" href="">Mới ra mắt</a>
+                <a class="btn" href="">Ưu đãi</a>
+                <a class="btn" href="">Trò chơi miễn phí</a>
+                <a class="btn" href="">Nhãn người dùng</a>
+            </div>
+        </div>
+        <!--popular_vr-->
+        <div class="container-fluid p-0">
+            <div class="content m-auto mt-4">
+                <h2>TRÒ CHƠI VR PHỔ BIẾN</h2>
+            </div>
+            <div class="content m-auto popular_vr d-flex gap-2">
+                <!---->
+                <a class="" href="">
+                    <div>
+                        <img src="../asset/imgs/app/vr_game/hard_bullet.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="discount_block">
+                            <div class="discount_price">
+                                <div class="discount_final_price">
+                                    188.000₫
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!---->
+                <a class="" href="">
+                    <div>
+                        <img src="../asset/imgs/app/vr_game/half-life_alyx.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="discount_block">
+                            <div class="discount_price">
+                                <div class="discount_final_price">
+                                    480.000₫
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!---->
+                <a class="" href="">
+                    <div>
+                        <img src="../asset/imgs/app/vr_game/vtol_vr.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="discount_block">
+                            <div class="discount_price">
+                                <div class="discount_final_price">
+                                    250.000₫
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!---->
+                <a class="" href="">
+                    <div>
+                        <img src="../asset/imgs/app/vr_game/kayak_vr.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="discount_block">
+                            <div class="discount_price">
+                                <div class="discount_final_price">
+                                    199.000₫
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Spacing-->
+        <div class="home_space"></div>
+    </div>
+    <!--Body2-->
+    <div class="container-fluid p-0 home_page_body_ctn2">
+        <!--??????-->
+        <div class="container-fluid p-0 tab_container">
+            <div class="content m-auto">
+                <div class="tab_row d-flex">
+                    <div class="tab_content tc_new_and_hot">Mới & Đang nổi</div>
+                    <div class="tab_content">Bán chạy nhất</div>
+                    <div class="tab_content">Phổ biến và Sắp ra mắt</div>
+                    <div class="tab_content">Ưu đãi</div>
+                </div>
+            </div>
+            <div class="content m-auto d-flex justify-content-between tab_game">
+                <!--left_col-->
+                <div class="left_col lc_new_and_hot">
+                    <div class="see_more p-1 mt-2">Xem thêm: <a href=""><span>Mới ra mắt</span></a></div>
+                    <!--tab_item 1-->
+                    <a class="link_tab_item" href="">
+                        <div id="tab_item_1" onmouseover="showTabPreview(this)" onmouseout="hideTabPreview(this)">
+                            <div class="tab_item">
+                                <!--img-->
+                                <div class="tab_item_cap">
+                                    <img src="../asset/imgs/app/tab/strays/strays.jpg" alt="">
+                                </div>
+                                <!--price-->
+                                <div class="discount_block tab_item_discount" data-price-final="22700000">
+                                    <div class="bundle_base_discount">-40%</div>
+                                    <div class="discount_pct">-63%</div>
+                                    <div class="discount_prices">
+                                        <div class="discount_original_price">608.000₫</div>
+                                        <div class="discount_final_price">227.000₫</div>
+                                    </div>
+                                </div>
+                                <!--content-->
+                                <div class="tab_item_content">
+                                    <div class="tab_item_name">Stray</div>
+                                    <div class="tab_item_details">
+                                        <span class="platform_img win"></span>
+                                        <div class="tab_item_top_tags"><span class="top_tag">Mèo</span><span
+                                                class="top_tag">,
+                                                Phiêu lưu</span><span class="top_tag">, Cyberpunk</span><span
+                                                class="top_tag">,
+                                                Dễ thương</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--tab_item 2-->
+                    <a class="link_tab_item" href="">
+                        <div id="tab_item_2" onmouseover="showTabPreview(this)" onmouseout="hideTabPreview(this)">
+                            <div class="tab_item">
+                                <!--img-->
+                                <div class="tab_item_cap">
+                                    <img src="../asset/imgs/app/tab/raft/raft.jpg" alt="">
+                                </div>
+                                <!--price-->
+                                <div class="discount_block tab_item_discount" data-price-final="">
+                                    <div class="bundle_base_discount"></div>
+                                    <div class="discount_pct"></div>
+                                    <div class="discount_prices">
+                                        <div class="discount_original_price"></div>
+                                        <div class="discount_final_price">188.000₫</div>
+                                    </div>
+                                </div>
+                                <!--content-->
+                                <div class="tab_item_content">
+                                    <div class="tab_item_name">Raft</div>
+                                    <div class="tab_item_details">
+                                        <span class="platform_img win"></span>
+                                        <div class="tab_item_top_tags">
+                                            <span class="top_tag">Sinh tồn</span>
+                                            <span class="top_tag">,
+                                                Thế giới mở</span><span class="top_tag">, Chế tác</span><span
+                                                class="top_tag">,
+                                                Phối hợp</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--tab_item 3-->
+                    <a class="link_tab_item" href="">
+                        <div id="tab_item_3" onmouseover="showTabPreview(this)" onmouseout="hideTabPreview(this)">
+                            <div class="tab_item">
+                                <!--img-->
+                                <div class="tab_item_cap">
+                                    <img src="../asset/imgs/app/tab/hades/hades.jpg" alt="">
+                                </div>
+                                <!--price-->
+                                <div class="discount_block tab_item_discount" data-price-final="13800000">
+                                    <div class="bundle_base_discount"></div>
+                                    <div class="discount_pct">-40%</div>
+                                    <div class="discount_prices">
+                                        <div class="discount_original_price">220.000₫</div>
+                                        <div class="discount_final_price">138.000₫</div>
+                                    </div>
+                                </div>
+                                <!--content-->
+                                <div class="tab_item_content">
+                                    <div class="tab_item_name">Hades</div>
+                                    <div class="tab_item_details">
+                                        <span class="platform_img win"></span>
+                                        <div class="tab_item_top_tags"><span class="top_tag">Rougelike</span><span
+                                                class="top_tag">,
+                                                Indie</span><span class="top_tag">, Rougelite</span><span
+                                                class="top_tag">,
+                                                Hành động</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--tab_item 4-->
+                    <a class="link_tab_item" href="">
+                        <div id="tab_item_4" onmouseover="showTabPreview(this)" onmouseout="hideTabPreview(this)">
+                            <div class="tab_item">
+                                <!--img-->
+                                <div class="tab_item_cap">
+                                    <img src="../asset/imgs/app/tab/elden_ring/elden_ring.jpg" alt="">
+                                </div>
+                                <!--price-->
+                                <div class="discount_block tab_item_discount" data-price-final="80000000">
+                                    <div class="bundle_base_discount"></div>
+                                    <div class="discount_pct"></div>
+                                    <div class="discount_prices">
+                                        <div class="discount_original_price"></div>
+                                        <div class="discount_final_price">800.000₫</div>
+                                    </div>
+                                </div>
+                                <!--content-->
+                                <div class="tab_item_content">
+                                    <div class="tab_item_name">ELDEN RING</div>
+                                    <div class="tab_item_details">
+                                        <span class="platform_img win"></span>
+                                        <div class="tab_item_top_tags"><span class="top_tag">Nhập vai (RPG)</span><span
+                                                class="top_tag">,
+                                                Like Dark Soul</span><span class="top_tag">, Thế giới mở</span><span
+                                                class="top_tag">,
+                                                Dark Fantasy</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--tab_item 5-->
+                    <a class="link_tab_item" href="">
+                        <div id="tab_item_5" onmouseover="showTabPreview(this)" onmouseout="hideTabPreview(this)">
+                            <div class="tab_item">
+                                <!--img-->
+                                <div class="tab_item_cap">
+                                    <img src="../asset/imgs/app/tab/battle_field_5/battle_field_5.jpg" alt="">
+                                </div>
+                                <!--price-->
+                                <div class="discount_block tab_item_discount" data-price-final="26700000">
+                                    <div class="bundle_base_discount"></div>
+                                    <div class="discount_pct">-70%</div>
+                                    <div class="discount_prices">
+                                        <div class="discount_original_price">890.000₫</div>
+                                        <div class="discount_final_price">267.000₫</div>
+                                    </div>
+                                </div>
+                                <!--content-->
+                                <div class="tab_item_content">
+                                    <div class="tab_item_name">Battlefield V</div>
+                                    <div class="tab_item_details">
+                                        <span class="platform_img win"></span>
+                                        <div class="tab_item_top_tags"><span class="top_tag">Bắn súng góc nhìn thứ nhất
+                                                (FPS)</span><span class="top_tag">,
+                                                Thế chiến II</span><span class="top_tag">, Chơi nhiều người</span><span
+                                                class="top_tag">
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--tab_item 6-->
+                    <a class="link_tab_item" href="">
+                        <div id="tab_item_6" onmouseover="showTabPreview(this)" onmouseout="hideTabPreview(this)">
+                            <div class="tab_item">
+                                <!--img-->
+                                <div class="tab_item_cap">
+                                    <img src="../asset/imgs/app/tab/spider_man/spider_man.jpg" alt="">
+                                </div>
+                                <!--price-->
+                                <div class="discount_block tab_item_discount" data-price-final="113900000">
+                                    <div class="bundle_base_discount"></div>
+                                    <div class="discount_pct"></div>
+                                    <div class="discount_prices">
+                                        <div class="discount_original_price"></div>
+                                        <div class="discount_final_price">1.139.000₫</div>
+                                    </div>
+                                </div>
+                                <!--content-->
+                                <div class="tab_item_content">
+                                    <div class="tab_item_name">Marvel’s Spider-Man Remastered</div>
+                                    <div class="tab_item_details">
+                                        <span class="platform_img win"></span>
+                                        <div class="tab_item_top_tags"><span class="top_tag">Hành động</span><span
+                                                class="top_tag">,
+                                                Siêu anh hùng</span><span class="top_tag">, Thế giới mở</span><span
+                                                class="top_tag">,
+                                                Phiêu lưu</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--tab_item 7-->
+                    <a class="link_tab_item" href="">
+                        <div id="tab_item_7" onmouseover="showTabPreview(this)" onmouseout="hideTabPreview(this)">
+                            <div class="tab_item">
+                                <!--img-->
+                                <div class="tab_item_cap">
+                                    <img src="../asset/imgs/app/tab/detroit/detroit.jpg" alt="">
+                                </div>
+                                <!--price-->
+                                <div class="discount_block tab_item_discount" data-price-final="29250000">
+                                    <div class="bundle_base_discount"></div>
+                                    <div class="discount_pct">-50%</div>
+                                    <div class="discount_prices">
+                                        <div class="discount_original_price">585.000₫</div>
+                                        <div class="discount_final_price">292.500₫</div>
+                                    </div>
+                                </div>
+                                <!--content-->
+                                <div class="tab_item_content">
+                                    <div class="tab_item_name">Detroit: Become Human</div>
+                                    <div class="tab_item_details">
+                                        <span class="platform_img win"></span>
+                                        <div class="tab_item_top_tags"><span class="top_tag">Cốt truyện phân
+                                                nhánh</span><span class="top_tag">,
+                                                Nhiều kết thúc</span><span class="top_tag">, Cốt truyện</span><span
+                                                class="top_tag">,
+                                            </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--tab_item 8-->
+                    <a class="link_tab_item" href="">
+                        <div id="tab_item_8" onmouseover="showTabPreview(this)" onmouseout="hideTabPreview(this)">
+                            <div class="tab_item">
+                                <!--img-->
+                                <div class="tab_item_cap">
+                                    <img src="../asset/imgs/app/tab/south_of_the_circle/south_of_the_circle.jpg" alt="">
+                                </div>
+                                <!--price-->
+                                <div class="discount_block tab_item_discount" data-price-final="16000000">
+                                    <div class="bundle_base_discount"></div>
+                                    <div class="discount_pct"></div>
+                                    <div class="discount_prices">
+                                        <div class="discount_original_price"></div>
+                                        <div class="discount_final_price">160.000₫</div>
+                                    </div>
+                                </div>
+                                <!--content-->
+                                <div class="tab_item_content">
+                                    <div class="tab_item_name">South of the Circle</div>
+                                    <div class="tab_item_details">
+                                        <span class="platform_img win"></span>
+                                        <div class="tab_item_top_tags"><span class="top_tag">Novel</span><span
+                                                class="top_tag">,
+                                                Phiêu lưu</span><span class="top_tag">, Giàu cốt truyện</span><span
+                                                class="top_tag">,
+                                                Nhiều kết thúc</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!--tab_item 9-->
+                    <a class="link_tab_item" href="">
+                        <div id="tab_item_9" onmouseover="showTabPreview(this)" onmouseout="hideTabPreview(this)">
+                            <div class="tab_item">
+                                <!--img-->
+                                <div class="tab_item_cap">
+                                    <img src="../asset/imgs/app/tab/it_take_2/it_take_2.jpg" alt="">
+                                </div>
+                                <!--price-->
+                                <div class="discount_block tab_item_discount" data-price-final="22700000">
+                                    <div class="bundle_base_discount"></div>
+                                    <div class="discount_pct">-50%</div>
+                                    <div class="discount_prices">
+                                        <div class="discount_original_price">790.000₫</div>
+                                        <div class="discount_final_price">395.000₫</div>
+                                    </div>
+                                </div>
+                                <!--content-->
+                                <div class="tab_item_content">
+                                    <div class="tab_item_name">It Takes Two</div>
+                                    <div class="tab_item_details">
+                                        <span class="platform_img win"></span>
+                                        <div class="tab_item_top_tags"><span class="top_tag">Multiplayer</span><span
+                                                class="top_tag">,
+                                                Phiêu lưu</span><span class="top_tag"></span><span class="top_tag">,
+                                                , Dễ thương</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--right_col-->
+                <div class="right_col">
+                    <div class="tab_preview_container">
+                        <!--tab_preview 1-->
+                        <div id="tab_preview_1">
+                            <div class="tab_preview">
+                                <h2>Stray</h2>
+                                <div class="tab_review_summary"
+                                    data-tooltip-html="97% trên 52,613 người dùng đánh giá tích cực trò chơi này.">
+                                    <div class="title">Tổng thể đánh giá người dùng:</div><span
+                                        class="game_review_summary positive">Cực kỳ tích
+                                        cực</span><span>&nbsp;(52,613)</span>
+                                </div>
+                                <div class="tags">
+                                    <a href="">Mèo</a>
+                                    <a href="">Phiêu lưu</a>
+                                    <a href="">Cyberpunk</a>
+                                    <a href="">Dễ thương</a>
+                                    <a href="">Giàu khí sắc</a>
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/strays/ss_2221af260c64362fdc835a9dca65f6f1d1192b25.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/strays/ss_3fdd04a5418293864bf82d33c75f833121e63804.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/strays/ss_88e209a90c2039fa76bca6fa08c641365be38d50.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/strays/ss_e8f0cbd5efdba352e89c4cfcee3fe991a1e1be8a.600x338.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <!--tab_preview 2-->
+                        <div id="tab_preview_2">
+                            <div class="tab_preview">
+                                <h2>Raft</h2>
+                                <div class="tab_review_summary"
+                                    data-tooltip-html="97% trên 52,613 người dùng đánh giá tích cực trò chơi này.">
+                                    <div class="title">Tổng thể đánh giá người dùng:</div><span
+                                        class="game_review_summary positive">Cực kỳ tích
+                                        cực</span><span>&nbsp;(168,982)</span>
+                                </div>
+                                <div class="tags">
+                                    <a href="">Sinh tồn</a>
+                                    <a href="">Thế giới mở</a>
+                                    <a href="">Chế tác</a>
+                                    <a href="">Phối hợp</a>
+                                    <a href="">Phiêu lưu</a>
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/raft/ss_2adb248f4d501cf58344d9af1d8a9e56c74647ee.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/raft/ss_56914c026da8c8411974bd0e2e8cb81a0331ba99.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/raft/ss_c22b2ff5ba5609f74e61b5feaa5b7a1d7fd1dbd3.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/raft/ss_ef26440dc87e4d571139f5c64a22035d86723442.600x338.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <!--tab_preview 3-->
+                        <div id="tab_preview_3">
+                            <div class="tab_preview">
+                                <h2>Hades</h2>
+                                <div class="tab_review_summary"
+                                    data-tooltip-html="97% trên 52,613 người dùng đánh giá tích cực trò chơi này.">
+                                    <div class="title">Tổng thể đánh giá người dùng:</div><span
+                                        class="game_review_summary positive">Cực kỳ tích
+                                        cực</span><span>&nbsp;(178,917)</span>
+                                </div>
+                                <div class="tags">
+                                    <a href="">Rougeike</a>
+                                    <a href="">Indie</a>
+                                    <a href="">Rougelite</a>
+                                    <a href="">Hành động</a>
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/hades/ss_68300459a8c3daacb2ec687adcdbf4442fcc4f47.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/hades/ss_8a9f0953e8a014bd3df2789c2835cb787cd3764d.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/hades/ss_bcb499a0dd001f4101823f99ec5094d2872ba6ee.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/hades/ss_c0fed447426b69981cf1721756acf75369801b31.600x338.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <!--tab_preview 4-->
+                        <div id="tab_preview_4">
+                            <div class="tab_preview">
+                                <h2>ELDEN RING</h2>
+                                <div class="tab_review_summary"
+                                    data-tooltip-html="97% trên 52,613 người dùng đánh giá tích cực trò chơi này.">
+                                    <div class="title">Tổng thể đánh giá người dùng:</div><span
+                                        class="game_review_summary positive">Cực kỳ tích
+                                        cực</span><span>&nbsp;(52,613)</span>
+                                </div>
+                                <div class="tags">
+                                    <a href="">Nhập vai (RPG)</a>
+                                    <a href="">Thế giới mở</a>
+                                    <a href="">Like Dark Soul</a>
+                                    <a href="">Dark Fantasy</a>
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/elden_ring/ss_25cd489871907387c1b915022a96b196661b6e17.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/elden_ring/ss_3e556415d1bda00d749b2166ced264bec76f06ee.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/elden_ring/ss_ae44317e3bd07b7690b4d62cc5d0d1df30367a91.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/elden_ring/ss_e80a907c2c43337e53316c71555c3c3035a1343e.600x338.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <!--tab_preview 5-->
+                        <div id="tab_preview_5">
+                            <div class="tab_preview">
+                                <h2>Battlefield V</h2>
+                                <div class="tab_review_summary"
+                                    data-tooltip-html="97% trên 52,613 người dùng đánh giá tích cực trò chơi này.">
+                                    <div class="title">Tổng thể đánh giá người dùng:</div><span
+                                        class="game_review_summary positive">Khá tích
+                                        cực</span><span>&nbsp;(97,264)</span>
+                                </div>
+                                <div class="tags">
+                                    <a href="">Bắn súng góc nhìn thứ nhất (FPS)</a>
+                                    <a href="">Thế chiến II</a>
+                                    <a href="">Chơi nhiều người</a>
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/battle_field_5/ss_0569f81cafd8b18870d6d5bc296ad557f5576067.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/battle_field_5/ss_0c20c45d2e00feae5b9edfb6526662cc3c669164.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/battle_field_5/ss_73a21e43ec44cac9aab41d122a284582d194d352.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/battle_field_5/ss_d1952d018415b94bed85a503713a05ab12a407d6.600x338.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <!--tab_preview 6-->
+                        <div id="tab_preview_6">
+                            <div class="tab_preview">
+                                <h2>Marvel’s Spider-Man Remastered</h2>
+                                <div class="tab_review_summary"
+                                    data-tooltip-html="97% trên 52,613 người dùng đánh giá tích cực trò chơi này.">
+                                    <div class="title">Tổng thể đánh giá người dùng:</div><span
+                                        class="game_review_summary positive">Khá tích
+                                        cực</span><span>&nbsp;(12,457)</span>
+                                </div>
+                                <div class="tags">
+                                    <a href="">Hành Động</a>
+                                    <a href="">Siêu anh hùng</a>
+                                    <a href="">Thế giới mở</a>
+                                    <a href="">Phiêu lưu</a>
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/spider_man/ss_427677cf78195df94702f0a963cd9eaeb9d8935a.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/spider_man/ss_5b5448df07bc74ba236f2c007fd0ec19cc1d22b6.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/spider_man/ss_dfba6f2477bfa42be69ddfdffbd421d3943d20bf.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/spider_man/ss_dfe778bf6d66e952e4acd4e1f926f7615b609ddf.600x338.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <!--tab_preview 7-->
+                        <div id="tab_preview_7">
+                            <div class="tab_preview">
+                                <h2>Detroit: Become Human</h2>
+                                <div class="tab_review_summary"
+                                    data-tooltip-html="97% trên 52,613 người dùng đánh giá tích cực trò chơi này.">
+                                    <div class="title">Tổng thể đánh giá người dùng:</div><span
+                                        class="game_review_summary positive">Cực kỳ tích
+                                        cực</span><span>&nbsp;(47,919)</span>
+                                </div>
+                                <div class="tags">
+                                    <a href="">Cốt truyện</a>
+                                    <a href="">Lựa chọn phân nhánh</a>
+                                    <a href="">Nhiều kết thúc</a>
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/detroit/ss_9c900def2b1d9a003b7d3e202ea2a7556a36e081.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/detroit/ss_9e6c271b6d11b1d0f35da336fb57b35fed0079d1.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/detroit/ss_b1e2a185bea13cccfc662e1286912bcd6f4ee798.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/detroit/ss_fbc13a0d5b5b784c053042eb4ea09a30de069b3a.600x338.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <!--tab_preview 8-->
+                        <div id="tab_preview_8">
+                            <div class="tab_preview">
+                                <h2>Stray</h2>
+                                <div class="tab_review_summary"
+                                    data-tooltip-html="97% trên 52,613 người dùng đánh giá tích cực trò chơi này.">
+                                    <div class="title">Tổng thể đánh giá người dùng:</div><span
+                                        class="game_review_summary">Trái chiều
+                                    </span><span>&nbsp;(10,613)</span>
+                                </div>
+                                <div class="tags">
+                                    <a href="">Novel</a>
+                                    <a href="">Cốt truyện</a>
+                                    <a href="">Phiêu lưu</a>
+                                    <a href="">Nhiều kết thúc</a>
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/south_of_the_circle/ss_03ec6ed4af8ceef7840660ae8acd7c88369291d8.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/south_of_the_circle/ss_1b0d785bc5288a160d458252861a093463427b61.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/south_of_the_circle/ss_3b6a418f89b6f5b17284448883619a8b6ef2ef60.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/south_of_the_circle/ss_dab4e5c442303e8c4e5d35fd40f1405b04bf297d.600x338.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                        <!--tab_preview 9-->
+                        <div id="tab_preview_9">
+                            <div class="tab_preview">
+                                <h2>It take two</h2>
+                                <div class="tab_review_summary"
+                                    data-tooltip-html="97% trên 52,613 người dùng đánh giá tích cực trò chơi này.">
+                                    <div class="title">Tổng thể đánh giá người dùng:</div><span
+                                        class="game_review_summary positive">Cực kỳ tích
+                                        cực</span><span>&nbsp;(52,613)</span>
+                                </div>
+                                <div class="tags">
+                                    <a href="">Mèo</a>
+                                    <a href="">Phiêu lưu</a>
+                                    <a href="">Cyberpunk</a>
+                                    <a href="">Dễ thương</a>
+                                    <a href="">Giàu khí sắc</a>
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/it_take_2/ss_3e59753eefaba9a7704a18e902b48e8d38e95e0b.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/it_take_2/ss_4a62bc8fa398fc5b2094a6225dc5ecff9485f824.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/it_take_2/ss_6e987a0678b013bfd0073a9ac4703e1f04ca4dea.600x338.jpg);">
+                                </div>
+                                <div class="screenshot"
+                                    style="background-image: url(../asset/imgs/app/tab/it_take_2/ss_fdac523e3ea4d2f32a44449bb8c224857563bd7d.600x338.jpg);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--live_stream-->
+        <div class="cointainer-fluid p-0">
+            <div class="content m-auto mt-4">
+                <h2>TRÒ CHƠI ĐANG PHÁT SÓNG</h2>
+            </div>
+            <div class="content m-auto live_stream d-flex justify-content-between flex-wrap">
+                <!--Live 1-->
+                <a href="">
+                    <div class="video_shot">
+                        <img class="pause" src="../asset/imgs/app/live_stream/live1.jfif" alt="">
+                        <img class="play_icon" src="../asset/imgs/app/live_stream/play_icon80.png" alt="">
+                    </div>
+                    <div class="title d-flex justify-content-between">
+                        <span class="live_stream_app">Ghost Watchers</span>
+                        <span class="live_steam_viewers">2,904</span>
+
+                    </div>
+                    <div class="broadcast_live_stream_icon">Trực tiếp</div>
+                </a>
+                <!--Live 2-->
+                <a href="">
+                    <div class="video_shot">
+                        <img class="pause" src="../asset/imgs/app/live_stream/live2.jfif" alt="">
+                        <img class="play_icon" src="../asset/imgs/app/live_stream/play_icon80.png" alt="">
+                    </div>
+                    <div class="title d-flex justify-content-between">
+                        <span class="live_stream_app">MONSTER HUNTER RISE</span>
+                        <span class="live_steam_viewers">1,422</span>
+
+                    </div>
+                    <div class="broadcast_live_stream_icon">Trực tiếp</div>
+                </a>
+                <!--Live 3-->
+                <a href="">
+                    <div class="video_shot">
+                        <img class="pause" src="../asset/imgs/app/live_stream/live3.jfif" alt="">
+                        <img class="play_icon" src="../asset/imgs/app/live_stream/play_icon80.png" alt="">
+                    </div>
+                    <div class="title d-flex justify-content-between">
+                        <span class="live_stream_app">Truck simulator</span>
+                        <span class="live_steam_viewers">1,103</span>
+
+                    </div>
+                    <div class="broadcast_live_stream_icon">Trực tiếp</div>
+                </a>
+                <!--Live 4-->
+                <a href="">
+                    <div class="video_shot">
+                        <img class="pause" src="../asset/imgs/app/live_stream/live4.jfif" alt="">
+                        <img class="play_icon" src="../asset/imgs/app/live_stream/play_icon80.png" alt="">
+                    </div>
+                    <div class="title d-flex justify-content-between">
+                        <span class="live_stream_app">PEAKE</span>
+                        <span class="live_steam_viewers">904</span>
+
+                    </div>
+                    <div class="broadcast_live_stream_icon">Trực tiếp</div>
+                </a>
+                <!--Live 5-->
+                <a href="">
+                    <div class="video_shot">
+                        <img class="pause" src="../asset/imgs/app/live_stream/live5.jfif" alt="">
+                        <img class="play_icon" src="../asset/imgs/app/live_stream/play_icon80.png" alt="">
+                    </div>
+                    <div class="title d-flex justify-content-between">
+                        <span class="live_stream_app">Chickenoidz Super Party</span>
+                        <span class="live_steam_viewers">1,082</span>
+
+                    </div>
+                    <div class="broadcast_live_stream_icon">Trực tiếp</div>
+                </a>
+                <!--Live 6-->
+                <a href="">
+                    <div class="video_shot">
+                        <img class="pause" src="../asset/imgs/app/live_stream/live6.jfif" alt="">
+                        <img class="play_icon" src="../asset/imgs/app/live_stream/play_icon80.png" alt="">
+                    </div>
+                    <div class="title d-flex justify-content-between">
+                        <span class="live_stream_app">Forza horizon 5</span>
+                        <span class="live_steam_viewers">2,420</span>
+
+                    </div>
+                    <div class="broadcast_live_stream_icon">Trực tiếp</div>
+                </a>
+            </div>
+        </div>
+        <!--less_200k-->
+        <div class="container-fluid p-0">
+            <div class="content m-auto mt-4">
+                <h2>DƯỚI 200.000₫</h2>
+            </div>
+            <div class="content m-auto less_200k d-flex gap-2">
+                <!---->
+                <a class="" href="">
+                    <div>
+                        <img src="../asset/imgs/app/less_200k/l4d.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="discount_block">
+                            <div class="discount_price">
+                                <div class="discount_original_price"></div>
+                                <div class="discount_final_price">
+                                    120.000₫
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!---->
+                <a class="" href="">
+                    <div>
+                        <img src="../asset/imgs/app/less_200k/raft.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="discount_block">
+                            <div class="discount_price">
+                                <div class="discount_original_price"></div>
+                                <div class="discount_final_price">
+                                    188.000₫
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!---->
+                <a class="" href="">
+                    <div>
+                        <img src="../asset/imgs/app/less_200k/hades.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="discount_block">
+                            <div class="discount_pct">-40%</div>
+                            <div class="discount_price">
+                                <div class="discount_original_price"> 220.000₫</div>
+                                <div class="discount_final_price">
+                                    132.000₫
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+                <!---->
+                <a class="" href="">
+                    <div>
+                        <img src="../asset/imgs/app/less_200k/dinkum.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="discount_block">
+                            <div class="discount_price">
+                                <div class="discount_original_price"></div>
+                                <div class="discount_final_price">
+                                    188.000₫
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--update_offers-->
+        <div class="container-fluid p-0">
+            <div class="content m-auto mt-4">
+                <h2>CẬP NHẬT VÀ ƯU ĐÃI</h2>
+            </div>
+            <div class="content m-auto update_offers gap-3 d-flex">
+                <!---->
+                <a class="" href="">
+                    <div>
+                        <img src="../asset/imgs/app/update_offers/hades.gif" alt="">
+                    </div>
+                    <div>
+                        <div class="discount_block">
+                            <div class="discount_pct">-40%</div>
+                            <div class="discount_price">
+                                <div class="discount_original_price"> 220.000₫</div>
+                                <div class="discount_final_price">
+                                    132.000₫
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!---->
+                <div class="d-flex gap-2 flex-wrap">
+                    <a class="" href="">
+                        <div>
+                            <img src="../asset/imgs/app/update_offers/hades.gif" alt="">
+                        </div>
+                        <div>
+                            <div class="discount_block">
+                                <div class="discount_pct">-40%</div>
+                                <div class="discount_price">
+                                    <div class="discount_original_price"> 220.000₫</div>
+                                    <div class="discount_final_price">
+                                        132.000₫
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="" href="">
+                        <div>
+                            <img src="../asset/imgs/app/update_offers/citizen_sleeper.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="discount_block">
+                                <div class="discount_price">
+                                    <div class="discount_original_price"></div>
+                                    <div class="discount_final_price">
+                                        188.000₫
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                    <!---->
+                    <a class="" href="">
+                        <div>
+                            <img src="../asset/imgs/app/update_offers/for_honor.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="discount_block">
+                                <div class="discount_pct">-50%</div>
+                                <div class="discount_price">
+                                    <div class="discount_original_price"> 300.000₫</div>
+                                    <div class="discount_final_price">
+                                        150.000₫
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---->
+                    <a class="" href="">
+                        <div>
+                            <img src="../asset/imgs/app/update_offers/north_gard.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="discount_block">
+                                <div class="discount_price">
+                                    <div class="discount_original_price"></div>
+                                    <div class="discount_final_price">
+                                        250.000₫
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---->
+                    <a class="" href="">
+                        <div>
+                            <img src="../asset/imgs/app/update_offers/play_way.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="discount_block">
+                                <div class="discount_pct">Lên tới 90%</div>
+                                </div>
+                        </div>
+                    </a>
+                    <!---->
+                    <a class="" href="">
+                        <div>
+                            <img src="../asset/imgs/app/update_offers/multiversus.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="discount_block">
+                                <div class="discount_price">
+                                    <div class="discount_original_price"></div>
+                                    <div class="discount_final_price">
+                                        Chơi miễn phí
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!---->
+                    <a class="" href="">
+                        <div>
+                            <img src="../asset/imgs/app/update_offers/game_show.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="discount_block">
+                                <div class="discount_price">
+                                    <div class="discount_original_price"></div>
+                                    <div class="discount_final_price">
+                                        Nhấn để xem chi tiết
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Spacing-->
+        <div class="home_space"></div>
+    </div>
+    <!--Content login-->
+    <div class="container-fluid pt-5 pb-5 content_login">
+        <div class="content text-center m-auto">
+            <span>Bạn đang tìm những gợi ý?</span>
+            <p>Đăng nhập để xem những gợi ý dành riêng cho bạn</p>
+            <a href="login.html" class="btn btn_green"><span>Đăng nhập</span></a>
+            <br>
+            <br>
+            <p>Hoặc <a href="register.html">đăng ký</a> và tham gia Steam miễn phí</p>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fuild content_footer pb-5">
+        <div class="content m-auto pt-3">
+            <div class="rule"></div>
+            <img src="../asset/imgs/img/footerLogo_valve_new.png" alt="" class="logo_valve">
+            <img src="../asset/imgs/img/logo_steam_footer.png" alt="" class="logo_steam">
+            <div>© 2022 Valve Corporation. Bảo lưu mọi quyền. Tất cả các thương hiệu là tài sản của chủ sở hữu tương ứng
+                tại Hoa Kỳ và các quốc gia khác.</div>
+            <div>Giá đã bao gồm VAT (nếu có).
+                &nbsp; &nbsp;
+                <a href="">Chính sách bảo mật</a>
+                &nbsp; | &nbsp;
+                <a href="">Pháp lý</a>
+                &nbsp; | &nbsp;
+                <a href="">Điều khoản người đăng ký Steam </a>
+                &nbsp; | &nbsp;
+                <a href="">Hoàn tiền</a>
+                &nbsp; | &nbsp;
+                <a href="">Về cookie</a>
+            </div>
+            <div class="rule mt-2"></div>
+            <nav class="footer_navbar">
+                <div class="content justify-content-between align-content-center">
+                    <a href="index.html">Về Valve</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html">Công việc</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html">Steamworks</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html">Phân phối Steam</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html">Hỗ trợ</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html">Thẻ quà</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html"><img src="../asset/imgs/img/ico_facebook.gif" alt=""> Steam</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html"><img src="../asset/imgs/img/ico_twitter.gif" alt=""> @steam</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../asset/js/script.js"></script>
+</body>
+
+</html>

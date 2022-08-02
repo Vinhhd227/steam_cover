@@ -1,0 +1,9 @@
+:root {
+    --gpStoreDarkGrey: #2A475E;
+    --gpStoreDarkerGrey: #1B2838;
+    --gpStoreDarkestGrey: #000F18;
+    --gpGradient-StoreBackground: linear-gradient(180deg, var(--gpStoreDarkGrey) 0%, var(--gpStoreDarkerGrey) 80%);
+    --nav-StoreBackground: linear-gradient(90deg, rgba(62, 103, 150, 0.918) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+    --nav-StoreDropdownBackground: linear-gradient(90deg, rgba(33, 162, 255, 0.1) 1.89%, rgba(50, 50, 51, 0) 50%), linear-gradient(180deg, #575860 11.6%, #3A4852 54.73%, #2C2D34 100%);
+    --shadow: 1px 1px 0px rgb(255 255 255 / 20%);
+}

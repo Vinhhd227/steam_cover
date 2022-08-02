@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="..\asset\css\reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\asset\css\root.css">
+    <link rel="stylesheet" href="..\asset\css\style.css">
+    <link rel="stylesheet" href="..\asset\css\reponsive.css">
+</head>
+
+<body id="overflow">
+    <div id="overlay"></div>
+    <!--Sidebar-->
+    <div class="" id="sidebar">
+        <div class="sidebar_content d-flex flex-column">
+            <a href="login.html" class="sidebar_item">Đăng nhập</a>
+            <a href="index.html" class="sidebar_item">Cửa hàng</a>
+            <a href="#" class="sidebar_item">Cộng đồng</a>
+            <a href="#" class="sidebar_item">Hỗ trợ</a>
+            <div class="sidebar_option">Thay đổi ngôn ngữ</div>
+            <div class="sidebar_option">Xem web cho desktop</div>
+            <div class="sidebar_footer">
+                <img src="../asset/imgs/img/logo_valve_footer.png" alt="">
+                © Valve Corporation. Bảo lưu mọi quyền. Tất cả các thương hiệu là tài sản của chủ sở hữu tương ứng tại
+                Hoa Kỳ và các quốc gia khác.
+                &nbsp;
+                <a href="">Chính sách bảo mật</a>
+                &nbsp; | &nbsp;
+                <a href="">Pháp lý</a>
+                &nbsp; | &nbsp;
+                <a href="">Điều khoản người đăng ký Steam </a>
+                &nbsp; | &nbsp;
+                <a href="">Hoàn tiền</a>
+                &nbsp; | &nbsp;
+                <a href="">Về cookie</a>
+            </div>
+        </div>
+    </div>
+    <!--Global_Navigation-->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg global-navbar">
+            <div class="reponsive_menu_logo"><button onclick="sb_open()"><img
+                        src="../asset/imgs/img/header_menu_hamburger.png" alt=""></button></div>
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="../asset/imgs/svg/logo_steam.svg" alt=""></a>
+                <div class="collapse navbar-collapse justify-content-start" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="dropdown global-dropdown"><a class="nav-link" href="index.html">CỬA HÀNG</a>
+                                <div class="dropdown-content">
+                                    <a href="#">TRANG CHỦ</a>
+                                    <a href="#">HÀNG KHÁM PHÁ</a>
+                                    <a href="#">DANH SÁCH ƯỚC</a>
+                                    <a href="#">CỬA HÀNG ĐIỂM</a>
+                                    <a href="#">TIN TỨC</a>
+                                    <a href="#">THỐNG KÊ</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown global-dropdown"> <a class="nav-link dropdown" href="#">CỘNG ĐỒNG</a>
+                                <div class="dropdown-content">
+                                    <a href="#">TRANG CHỦ</a>
+                                    <a href="#">THẢO LUẬN</a>
+                                    <a href="#">WORKSHOP</a>
+                                    <a href="#">CHỢ</a>
+                                    <a href="#">PHÁT SÓNG</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">GIỚI THIỆU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">HỖ TRỢ</a></li>
+                    </ul>
+                </div>
+                <div class="collapse show global-action">
+                    <a class="installsteam_btn" href="index.html">Cài đặt Steam</a>
+                    <a class="global-action-link" href="login.html">Đăng nhập</a>
+                    &nbsp;|&nbsp;
+                    <div class="dropdown global-dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Ngôn ngữ
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">简体中文 (Hán giản thể)</a></li>
+                            <li><a class="dropdown-item" href="#">繁體中文 (Hán phồn thể)</a></li>
+                            <li><a class="dropdown-item" href="#">日本語 (Nhật)</a></li>
+                            <li><a class="dropdown-item" href="#">한국어 (Hàn Quốc)</a></li>
+                            <li><a class="dropdown-item" href="#">ไทย (Thái)</a></li>
+                            <li><a class="dropdown-item" href="#">Български (Bungari)</a></li>
+                            <li><a class="dropdown-item" href="#">Čeština (Séc)</a></li>
+                            <li><a class="dropdown-item" href="#">Dansk (Đan Mạch)</a></li>
+                            <li><a class="dropdown-item" href="#">Deutsch (Đức)</a></li>
+                            <li><a class="dropdown-item" href="#">English (Anh)</a></li>
+                            <li><a class="dropdown-item" href="#">Español - España (Tây Ban Nha - TBN)</a></li>
+                            <li><a class="dropdown-item" href="#">Español - Latinoamérica (Tây Ban Nha cho Mỹ Latin)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ελληνικά (Hy Lạp)</a></li>
+                            <li><a class="dropdown-item" href="#">Français (Pháp)</a></li>
+                            <li><a class="dropdown-item" href="#">Italiano (Ý)</a></li>
+                            <li><a class="dropdown-item" href="#">Magyar (Hungary)</a></li>
+                            <li><a class="dropdown-item" href="#">Nederlands (Hà Lan)</a></li>
+                            <li><a class="dropdown-item" href="#">Norsk (Na Uy)</a></li>
+                            <li><a class="dropdown-item" href="#">Polski (Ba Lan)</a></li>
+                            <li><a class="dropdown-item" href="#">Português (Bồ Đào Nha)</a></li>
+                            <li><a class="dropdown-item" href="#">Português - Brasil (Bồ Đào Nha - Brazil)</a></li>
+                            <li><a class="dropdown-item" href="#">Română (Rumani)</a></li>
+                            <li><a class="dropdown-item" href="#">Русский (Nga)</a></li>
+                            <li><a class="dropdown-item" href="#">Suomi (Phần Lan)</a></li>
+                            <li><a class="dropdown-item" href="#">Svenska (Thụy Điển)</a></li>
+                            <li><a class="dropdown-item" href="#">Türkçe (Thổ Nhĩ Kỳ)</a></li>
+                            <li><a class="dropdown-item" href="#">Українська (Ukrainia)</a></li>
+                            <li><a class="dropdown-item" href="#">Báo cáo lỗi dịch thuật</a></li>
+                        </ul>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--login_page-->
+    <div class="container-fluid login_page">
+        <div class="content m-auto d-flex">
+            <div class="loginbox">
+                <div class="loginbox_content d-flex flex-column m-auto">
+                    <div class="login_title text-center mb-4">
+                        Đăng nhập
+                    </div>
+                    <form action="">
+                        <div class="input_title text-start mt-3 mb-1">Tên tài khoản Steam</div>
+                        <input class="text_field" type="text">
+                        <div class="input_title text-start mt-3 mb-1">Mật khẩu</div>
+                        <input class="text_field" type="password">
+                    </form>
+                    <button class="btn m-auto mt-3"><span>Đăng nhập</span></button>
+                    <a class="text-center link_forgot_pass" href="">Quên mật khẩu?</a>
+                </div>
+
+            </div>
+            <div class="login_right_col text-center pt-5">
+                <div class="login_join_desc m-auto d-flex flex-column">Tham gia Steam và khám phá hàng ngàn trò chơi
+                    giải trí.</div>
+                <a class="mt-1" href="">Tìm hiểu thêm
+                </a>
+                <img src="../asset/imgs/img/join_pc.png" alt="">
+                <div class="subtext mt-2 mb-3">Miễn phí và dễ dàng sử dụng.</div>
+                <a href="register.html"><span class="btn">Tham gia Steam</span></a>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fuild content_footer pb-5">
+        <div class="content m-auto pt-3">
+            <div class="rule"></div>
+            <img src="../asset/imgs/img/footerLogo_valve_new.png" alt="" class="logo_valve">
+            <img src="../asset/imgs/img/logo_steam_footer.png" alt="" class="logo_steam">
+            <div>© 2022 Valve Corporation. Bảo lưu mọi quyền. Tất cả các thương hiệu là tài sản của chủ sở hữu tương ứng
+                tại Hoa Kỳ và các quốc gia khác.</div>
+            <div>Giá đã bao gồm VAT (nếu có).
+                &nbsp; &nbsp;
+                <a href="">Chính sách bảo mật</a>
+                &nbsp; | &nbsp;
+                <a href="">Pháp lý</a>
+                &nbsp; | &nbsp;
+                <a href="">Điều khoản người đăng ký Steam </a>
+                &nbsp; | &nbsp;
+                <a href="">Hoàn tiền</a>
+                &nbsp; | &nbsp;
+                <a href="">Về cookie</a>
+            </div>
+            <div class="rule mt-2"></div>
+            <nav class="footer_navbar">
+                <div class="content justify-content-between align-content-center">
+                    <a href="index.html">Về Valve</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html">Công việc</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html">Steamworks</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html">Phân phối Steam</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html">Hỗ trợ</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html">Thẻ quà</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html"><img src="../asset/imgs/img/ico_facebook.gif" alt=""> Steam</a>
+                    &nbsp; | &nbsp;
+                    <a href="index.html"><img src="../asset/imgs/img/ico_twitter.gif" alt=""> @steam</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../asset/js/script.js"></script>
+</body>
+
+</html>
